@@ -102,14 +102,17 @@ void Delete_at_begining(){
     }
 }
 int main(){
+    printf("All elements:\n");
     for (int i = 0; i < 10 ; i++)
     {
         Insertion_at_end(i+1);
     }
     display();
+    printf("\nDelete 2 elements from begining:\n");
     Delete_at_begining();
     Delete_at_begining();
     display();
+    printf("\nDelete 2 elements from end:\n");
     Delete_at_end();
     Delete_at_end();
     display();
