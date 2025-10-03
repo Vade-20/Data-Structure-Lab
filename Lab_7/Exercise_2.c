@@ -1,9 +1,7 @@
 /*2. Linked List-Based Stack:
 i. Write a program to input an infix expression and convert into its equivalent
 post fix form and display. Operands can be single characters.
-
-ii. Evaluate a postfix expression using stack.
-➤ Push operands, pop two for operator, and push result back*/
+*/
 
 #include <stdio.h>
 #include <string.h>
@@ -46,7 +44,6 @@ char pop(){
     }
     else{   
         Node * temp = head;
-        Node * prev = NULL;
         while (temp->next != tail){
             temp = temp->next;}
         temp->next = NULL;
